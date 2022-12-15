@@ -54,6 +54,21 @@
 
 .hero {
   padding-top: 50px;
+  padding-bottom: 237px;
+
+  @include media(tablet) {
+    padding-top: 14px;
+    padding-bottom: 24px;
+  }
+
+  @include media(desktop) {
+    padding-top: 45px;
+    padding-bottom: 103px;
+  }
+}
+
+.hero__cotainer {
+  position: relative;
 }
 
 .hero__title {
@@ -89,26 +104,117 @@
     margin-bottom: 39px;
   }
 
-  @include media(tablet) {
+  @include media(desktop) {
     margin-bottom: 109px;
   }
 }
 
 .hero__btn {
+  display: inline-flex;
   font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15px / 12px);
-  
+  font-size: 12px;
+  line-height: calc(15px / 12px);
 
-  @include media(tablet) {
-    margin-bottom: 109px;
+  @include media(desktop) {
+    font-size: 14px;
+    line-height: calc(18px / 14px);
   }
 
-    &--right {
-      color: #000000;
-      border: 2px solid #F8D24E;
-        border-radius: 8px;
+  &--left {
+    padding: 11px 26px;
+
+    color: #000000;
+    border: 2px solid #f8d24e;
+    border-radius: 8px;
+
+    @include media(desktop) {
+      padding: 12px 34px;
     }
+  }
+
+  &--right {
+    padding: 11px 12px;
+    color: #f8d24e;
+    text-decoration: underline;
+
+    @include media(desktop) {
+      padding: 12px 34px;
+    }
+  }
 }
 
+.hero__text {
+  @include media(tablet, max) {
+    display: none;
+  }
 
+  @include media(tablet) {
+    margin-left: 184px;
+    width: 139px;
+    font-size: 12px;
+    line-height: calc(17px / 12px);
+    letter-spacing: 0.01em;
+  }
+
+  @include media(desktop) {
+    margin-left: 241px;
+    width: 200px;
+    font-size: 14px;
+    line-height: calc(20px / 14px);
+    letter-spacing: 0em;
+  }
+}
+
+.hero__own-list {
+  position: absolute;
+  right: 32px;
+  top: 28px;
+  
+  text-align: end;
+
+  @include media(tablet, max) {
+    display: none;
+  }
+
+  @include media(tablet) {
+    font-size: 8px;
+    line-height: calc(10px / 8px);
+  }
+
+  @include media(desktop) {
+    right: 16px;
+      top: 53px;
+
+    font-size: 14px;
+    line-height: calc(17px / 14px);
+  }
+}
+
+.hero__own-item {
+  @include media(tablet) {
+    margin-bottom: 20px;
+  }
+
+  @include media(desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.hero__own-number {
+  margin-bottom: 4px;
+  
+  display: block;
+  color: #131313;
+
+  @include media(tablet) {
+    font-weight: 900;
+      font-size: 28px;
+      line-height: calc(34px / 28px);
+      
+  }
+
+  @include media(desktop) {
+    font-size: 46px;
+      line-height: calc(56px / 46px);
+  }
+}
