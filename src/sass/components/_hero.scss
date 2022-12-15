@@ -1,0 +1,83 @@
+// Mixins
+@mixin transition ($property, $duration: 250ms, $timing: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition: $property $duration $timing;
+}
+
+@mixin centered-flex($type: flex, $ai: center, $jc: false) {
+    display: $type;
+    align-items: $ai;
+
+    @if $jc {
+        justify-content: $jc;
+    }
+}
+
+@mixin media ($size, $type: min) {
+    @if $size ==mobile {
+        $width: 480px;
+
+        @if $type ==max {
+            $width: $width - 1px;
+        }
+
+        @media screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+
+    @else if $size ==tablet {
+        $width: 768px;
+
+        @if $type ==max {
+            $width: $width - 1px;
+        }
+
+        @media screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+
+    @else if $size ==desktop {
+        $width: 1200px;
+
+        @if $type ==max {
+            $width: $width - 1px;
+        }
+
+        @media screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+.container {
+    /* outline: 2px solid red; */
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include media(mobile) {
+        
+        width: 480px;
+    }
+
+    @include media(tablet) {
+        width: 768px;
+    }
+
+    @include media(desktop) {
+        width: 1200px;
+    }
+}
+
+.hero-title{
+font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
