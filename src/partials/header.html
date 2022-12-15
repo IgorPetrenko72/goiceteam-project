@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container">
-    <svg>
+    <svg class="logo" width="60" height="65">
       <use href="./images/sprite.svg#icon-Logo"></use>
     </svg>
     <nav>
@@ -11,6 +11,20 @@
         <li>Contact</li>
       </ul>
     </nav>
-    <button>Buy now</button>
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="burger-btn" width="32" height="32">
+        <use href="./images/sprite.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+    <button>
+      Buy now
+      <svg class="btn-decor" width="12" height="12">
+        <use href="./images/sprite.svg#icon-short-arrow"></use>
+      </svg>
+    </button>
   </div>
 </header>
