@@ -32,6 +32,12 @@
         }
  }
  .btn-header{
+    @media screen and(max-width:1199px){
+        margin-left: 36px;
+    }
+    @media screen and(max-width:767px){
+     display: none;   
+    }
     border-radius: 10px;
     border: none;
     min-width: 152px;
