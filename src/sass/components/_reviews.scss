@@ -1,0 +1,37 @@
+.reviews {
+  background-image: url(../images/reviews/bg_desktop.jpg);
+}
+
+.reviews__img--icecreams {
+  border-radius: 24px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+
+.reviews__img--customer-1 {
+  border-radius: 44px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.reviews__box {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  background-color: rgba(132, 161, 120, 1);
+  width: 968px;
+  height: 138px;
+  padding: 42px 73px;
+  border-radius: 24px;
+}
+
+.reviews__text,
+.review__text--owner {
+  font-size: medium;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+}
+
+.review__text--owner {
+  color: #131313;
+}
