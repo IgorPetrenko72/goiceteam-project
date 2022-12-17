@@ -1,0 +1,106 @@
+.image-wrapper-gallery {
+    width: 1000px;
+    height: 420px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0);
+
+    @media screen and (max-width:1199px) {
+        width: 704px;
+        height: 327px;
+        border-radius: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 280px;
+        height: 130px;
+        border-radius: 24px;
+    }
+}
+
+.gallery {
+    background: linear-gradient(#84A178 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 25%);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+      background: linear-gradient(#84A178 50%, rgba(0, 0, 0, 0) 50% );
+    }
+    @media screen and (max-width: 768px){
+        background: linear-gradient(#84A178 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 25%);
+        
+    }
+}
+
+.img-gallery {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: right;
+}
+
+
+
+.slaider-gallery {
+    width: 1013px;
+    display: flex;
+    position: relative;
+    animation: animationGallery 30s cubic-bezier(0.77, 0, 0.175, 1);
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    border-radius: 24px;
+    background-color: rgba(0, 0, 0, 0);
+
+    @keyframes animationGallery {
+        0% {
+            right: 2026px;
+        }
+
+        50% {
+            right: 1013px;
+        }
+
+        100% {
+            right: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        width: 704px;
+        height: 327px;
+
+        @keyframes animationGallery {
+            0% {
+                right: 1408px;
+            }
+
+            50% {
+                right: 704px;
+            }
+
+            100% {
+                right: 0;
+            }
+        }
+    }
+
+    @media screen and  (max-width: 768px) {
+        width: 280px;
+        height: 130px;
+        @keyframes animationGallery {
+            0% {
+                right: 560px;
+            }
+
+            50% {
+                right: 280px;
+            }
+
+            100% {
+                right: 0;
+            }
+        }
+
+    }
+}
