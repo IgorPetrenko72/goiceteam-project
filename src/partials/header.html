@@ -1,4 +1,76 @@
-<header class="header">
-    <div class="container">
-    </div>
+<header id="header" class="header">
+  <div class="container header-container">
+    <svg class="logo" width="60" height="65">
+      <use href="./images/sprite.svg#icon-Logo"></use>
+    </svg>
+
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#header">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current" href="#about"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#products">Our products</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="burger-btn" width="32" height="32">
+        <use href="./images/sprite.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+    <button type="button" class="btn-header">
+      Buy now
+      <svg class="btn-icon" width="12" height="12">
+        <use href="./images/sprite.svg#icon-short-arrow"></use>
+      </svg>
+    </button>
+  </div>
 </header>
+
+<!-- menu-modal -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <svg class="logo-modal" width="40" height="37">
+    <use href="./images/sprite.svg#icon-Logo"></use>
+  </svg>
+  <button class="menu-toggle js-close-menu">
+    <svg class="close-menu" width="32" height="32">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu">
+    <li class="mobile-item">
+      <a href="#header" class="mobile-element">Home</a>
+    </li>
+    <li class="mobile-item">
+      <a href="#about" class="mobile-element mobile-element-current"
+        >How it's made</a
+      >
+    </li>
+    <li class="mobile-item">
+      <a href="#products" class="mobile-element">Our products</a>
+    </li>
+    <li class="mobile-item">
+      <a href="#contacts" class="mobile-element">Contact</a>
+    </li>
+  </ul>
+  <button type="button" class="btn-modal">
+    Buy now
+    <svg class="btn-icon" width="12" height="12">
+      <use href="./images/sprite.svg#icon-short-arrow"></use>
+    </svg>
+  </button>
+</div>
