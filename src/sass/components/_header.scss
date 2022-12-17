@@ -29,9 +29,11 @@
   & .navigation-item:not(:last-child) {
       margin-right: 28px;
   }
+  
 }
  .navigation-list{
     display: flex;
+
  }   
  .navigation-link{
     display: flex;
@@ -57,10 +59,11 @@
     border-radius: 10px;
     border: none;
     min-width: 152px;
-    padding-top: 12px;
+   
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
+         padding-top: 12px;
     padding-bottom:12px ;
     display: flex;
     justify-content: center;
@@ -124,8 +127,8 @@ margin-bottom: 74px;
 }
 .menu-toggle {
 
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 32px;
+    min-width: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,4 +237,16 @@ background-color: #84a178;
     @media screen and(min-width:768px){
        margin-bottom: 40px; 
     }
+}
+.navigation-link{
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.navigation{
+    @media screen and(min-width:1200px){
+        display: flex;
+            align-self: flex-end;
+    }
+   
 }
