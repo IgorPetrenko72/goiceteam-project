@@ -1,11 +1,10 @@
 .image-wrapper-gallery {
     width: 1000px;
-    height: 420px;
+    height: 422px;
     border-radius: 24px;
     overflow: hidden;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0);
-
+    background: rgba(0, 0, 0, 0);
     @media screen and (max-width:1199px) {
         width: 704px;
         height: 327px;
@@ -31,15 +30,13 @@
         
     }
 }
-
 .img-gallery {
     margin: 0;
     padding: 0;
     position: relative;
     float: right;
+    border-radius: 24px;
 }
-
-
 
 .slaider-gallery {
     width: 1013px;
@@ -50,17 +47,76 @@
     animation-iteration-count: infinite;
     animation-delay: 2s;
     border-radius: 24px;
-    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 
     @keyframes animationGallery {
         0% {
             right: 2026px;
         }
+        5%{
+            right: 2026px;
+        }
+        10%{
+            right: 2026px;
+        }
+        15%{
+            right: 2026px;
+            }
+        20%{
+            right: 2026px;
+        }
 
-        50% {
+        25%{
+            right: 2026px;
+        }
+
+        30% {
+            right: 2026px;
+        }
+
+
+        35% {
+            right: 1013px;
+        }
+        40%{
+            right: 1013px;
+        }
+        45%{
+            right: 1013px;
+        }
+        50%{
+            right: 1013px;
+        }
+        55%{
             right: 1013px;
         }
 
+
+        60%{
+            right: 1013px;
+        }
+
+        65% {
+            right: 0;
+        } 
+        70%{
+            right: 0;
+        }
+        75%{
+            right: 0;
+        }
+        80%{
+            right: 0;
+        }
+        85%{
+            right: 0;
+        }
+        90%{
+            right: 0;
+        }
+        95%{
+            right: 0;
+        }
         100% {
             right: 0;
         }
@@ -71,18 +127,94 @@
         height: 327px;
 
         @keyframes animationGallery {
-            0% {
-                right: 1408px;
-            }
-
-            50% {
-                right: 704px;
-            }
-
-            100% {
-                right: 0;
-            }
+                    0% {
+                        right: 1408px;
+                    }
+                
+                    5% {
+                        right: 1408px;
+                    }
+                
+                    10% {
+                        right: 1408px;
+                    }
+                
+                    15% {
+                        right: 1408px;
+                    }
+                
+                    20% {
+                        right: 1408px;
+                    }
+                
+                    25% {
+                        right: 1408px;
+                    }
+                
+                    30% {
+                        right: 1408px;
+                    }
+                
+                
+                    35% {
+                        right: 704px;
+                    }
+                
+                    40% {
+                        right: 704px;
+                    }
+                
+                    45% {
+                        right: 704px;
+                    }
+                
+                    50% {
+                        right: 704px;
+                    }
+                
+                    55% {
+                        right: 704px;
+                    }
+                
+                
+                    60% {
+                        right: 704px;
+                    }
+                
+                    65% {
+                        right: 0;
+                    }
+                
+                    70% {
+                        right: 0;
+                    }
+                
+                    75% {
+                        right: 0;
+                    }
+                
+                    80% {
+                        right: 0;
+                    }
+                
+                    85% {
+                        right: 0;
+                    }
+                
+                    90% {
+                        right: 0;
+                    }
+                
+                    95% {
+                        right: 0;
+                    }
+                
+                    100% {
+                        right: 0;
+                    }
         }
+                
+                 
     }
 
     @media screen and  (max-width: 768px) {
@@ -90,17 +222,91 @@
         height: 130px;
         @keyframes animationGallery {
             0% {
-                right: 560px;
-            }
-
-            50% {
-                right: 280px;
-            }
-
-            100% {
-                right: 0;
-            }
+                    right: 560px;
+                }
+            
+                5% {
+                    right: 560px;
+                }
+            
+                10% {
+                    right: 560px;
+                }
+            
+                15% {
+                    right: 560px;
+                }
+            
+            
+                20% {
+                    right: 560px;
+                }
+            
+                25% {
+                    right: 560px;
+                }
+            
+                30% {
+                    right: 560px;
+                }
+            
+            
+                35% {
+                    right: 280px;
+                }
+            
+                40% {
+                    right: 280px;
+                }
+            
+                45% {
+                    right: 280px;
+                }
+            
+                50% {
+                    right: 280px;
+                }
+            
+                55% {
+                    right: 280px;
+                }
+            
+            
+                60% {
+                    right: 280px;
+                }
+            
+                65% {
+                    right: 0;
+                }
+            
+                70% {
+                    right: 0;
+                }
+            
+                75% {
+                    right: 0;
+                }
+            
+                80% {
+                    right: 0;
+                }
+            
+                85% {
+                    right: 0;
+                }
+            
+                90% {
+                    right: 0;
+                }
+            
+                95% {
+                    right: 0;
+                }
+            
+                100% {
+                    right: 0;
+                }
         }
-
     }
 }
