@@ -77,14 +77,13 @@
 
 <!-- modal-card BuyNow -->
 <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
+  <div class="modal-products">
     <button class="close-btn" type="button" data-modal-close>
       <svg class="close-btn-icon" width="20" height="20">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-
-    <div class="form-group">
+    <form class="form-order">
       <p class="order-title">Buy now</p>
       <ul class="list-products list">
         <li class="product-item">
@@ -104,40 +103,45 @@
         </li>
       </ul>
 
-      <label class="form-field">
-        <input
-          class="form-input"
-          type="name"
-          name="name"
-          placeholder="Ann Tomson"
-          autofocus
-          required
-        />
-        <span class="form-label">Name</span>
-      </label>
-      <label class="form-field">
-        <input
-          class="form-input"
-          type="tel"
-          name="phone_number"
-          placeholder="+38(067)3041543"
-          required
-          min-length="12"
-          maxlength="12"
-        />
-        <span class="form-label">Phone</span>
-      </label>
-
-      <label class="form-message">
-        <textarea
-          class="form-textarea"
-          name="feedback"
-          rows="5"
-          placeholder="type your text"
-        ></textarea>
-        <span class="comment-label">Comment</span>
-      </label>
+      <div class="form-group">
+        <label class="form-field">
+          <input
+            class="form-input"
+            type="name"
+            name="name"
+            placeholder="Ann Tomson"
+            autofocus
+            required
+          />
+          <span class="form-label">Name</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-field">
+          <input
+            class="form-input"
+            type="tel"
+            name="phone_number"
+            placeholder="+38(067)3041543"
+            required
+            min-length="12"
+            maxlength="12"
+          />
+          <span class="form-label">Phone</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-message">
+          <textarea
+            class="form-textarea"
+            name="feedback"
+            rows="5"
+            placeholder="type your text"
+          ></textarea>
+          <span class="comment-label">Comment</span>
+        </label>
+      </div>
       <button class="btn-submit" type="button">Submit</button>
-    </div>
+    </form>
   </div>
 </div>
