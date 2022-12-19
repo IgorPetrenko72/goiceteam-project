@@ -183,6 +183,8 @@ width: 100%;
 
 .product-item {
     border-color: #84a178;
+    padding-top: 95px;
+        padding-bottom: 20px;
 }
 .product-item:last-child{
     @media screen and(max-width:767px){
@@ -199,13 +201,15 @@ width: 100%;
 }
 
 .title-product {
-    margin-top: 95px;
-    margin-bottom: 20px;
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.21;
     letter-spacing: 0.04em;
     color: #131313;
+}
+.product-input:checked+.product-field {
+    color: #2196f3;
 }
 /* Backdrop*/ 
 
