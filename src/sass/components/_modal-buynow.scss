@@ -33,6 +33,13 @@ width: 100%;
     color: #131313;
 }
 
+.form-input:not(:placeholder-shown):required:valid {
+    border-color: #84A178;
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+}
 .form-input:focus+.form-label {
     transform: translateX(-70px) scale(0.9);
 }
@@ -50,6 +57,7 @@ width: 100%;
 }
 
 .form-input {
+    outline: none;
     width: 100%;
     height: 32px;
     @media screen and(min-width:768px){
@@ -61,12 +69,13 @@ width: 100%;
     border-radius: 10px;
  
     background-color: rgba(248, 210, 78, 0.1);
-    text-decoration: none;
+    
 }
 
 .form-input::placeholder,
 .form-textarea::placeholder {
     opacity: 0;
+    color: #84a178;
 }
 
 .form-input:focus::placeholder,
@@ -88,6 +97,7 @@ width: 100%;
 }
 
 .form-textarea {
+    outline: none;
     width: 100%;
     @media screen and(max-width:767px){
         height: 65px;
@@ -277,6 +287,7 @@ width: 280px;
            position: absolute;
           
           top:-66px;
+          left:-2px;
             width: 132px;
             height:132px;
             border-radius: 50%;
@@ -302,6 +313,7 @@ width: 280px;
         .circle-coffee{
             position: absolute;
             top:-66px;
+            left:-2px;
     width: 132px;
 
 
@@ -331,6 +343,7 @@ width: 280px;
 .circle-milkshakes{
     position: absolute;
     top: -66px;
+    left:-2px;
     width: 132px;
     height: 132px;
     border-radius: 50%;
