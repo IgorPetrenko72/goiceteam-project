@@ -185,6 +185,7 @@ width: 100%;
     border-color: #84a178;
     padding-top: 95px;
         padding-bottom: 20px;
+        color: #131313;
 }
 .product-item:last-child{
     @media screen and(max-width:767px){
@@ -200,16 +201,17 @@ width: 100%;
     border-color: #d6936d;
 }
 
+
+.product-input:checked + .product-field {
+    color: #0A8817;
+}
 .title-product {
     
     font-weight: 700;
     font-size: 16px;
     line-height: 1.21;
     letter-spacing: 0.04em;
-    color: #131313;
-}
-.product-input:checked+.product-field {
-    color: #2196f3;
+   
 }
 /* Backdrop*/ 
 
