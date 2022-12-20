@@ -59,16 +59,18 @@
     border-radius: 10px;
     border: none;
     min-width: 152px;
+    
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap:8;
    
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
          padding-top: 12px;
     padding-bottom:12px ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:8;
+   
 
     background-color: #F8D24E;
     color: #000000;
