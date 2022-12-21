@@ -234,8 +234,10 @@
   transition: transform 400ms ease-out;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  width: 280px;
-  height: 991px;
+ max-width: 280px;
+ width: 95%;
+ max-height: 991px;
+ height: 99%;
   padding: 28px;
   overflow-y: scroll;
 
