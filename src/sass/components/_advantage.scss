@@ -18,20 +18,13 @@
     margin-bottom: 0;
     
 }
-
-
-
   @media screen and (min-width: 768px) {
     .advantages-list  {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      gap: 80px;
-    
-      
-    }
-    
-    
+      gap: 80px; 
+    }    
   }
 
   @media screen and (min-width: 1200px) {
@@ -39,14 +32,9 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      gap: 133px;
-      
-    }
-    
-    
+      gap: 133px;      
+    }    
   }
-
-
 
 .advantages-title {
     margin-bottom: 16px;
@@ -75,8 +63,7 @@
 
    @media screen and (min-width: 1200px) {
     max-width: 260px;
-   }
-  
+   }  
 }
 
 .advantages-title {
