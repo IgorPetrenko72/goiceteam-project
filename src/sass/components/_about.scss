@@ -191,6 +191,15 @@
 
   cursor: pointer;
 
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    color: #fcfcfc;
+    background-color: #0a8817;
+  }
+
   @media screen and (max-width: 767px) {
     display: block;
     margin-top: 10px;
@@ -212,4 +221,6 @@
   position: absolute;
   top: 15px;
   right: 35px;
+
+  fill: currentColor;
 }
