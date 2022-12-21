@@ -33,7 +33,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
-    cursor: pointer;
+    cursor: url(../images/cursor.svg), auto;
 }
 
 address {
@@ -41,5 +41,5 @@ address {
 }
 
 button {
-    cursor: pointer;
+    cursor: url(../images/cursor.svg), auto;
 }
