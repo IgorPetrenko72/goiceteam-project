@@ -241,7 +241,6 @@
     cursor: pointer;
     border: none;
     outline: none;
-    transition:  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width:768px) {
         margin-top: 50px;
@@ -252,10 +251,10 @@
         margin-bottom: 60px;
     }
 
-    &:hover,
-    &:focus {
-        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    }
+    // &:hover,
+    // &:focus {
+    //     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    // }
 
 }
 
