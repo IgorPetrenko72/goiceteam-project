@@ -6,56 +6,56 @@
 
 .products {
   padding: 60px 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  background-position: center;
-  // MOBILE
-  background-image: url(../images/Products/Backgroud_mobile@s1x.jpg);
+  // background-position: center;
+  // // MOBILE
+  // background-image: url(../images/Products/Backgroud_mobile@s1x.jpg);
 
-  // MOBILE RETINA
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/Products/Backgroud_mobile@s2x.jpg);
-  }
+  // // MOBILE RETINA
+  // @media screen and (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/Products/Backgroud_mobile@s2x.jpg);
+  // }
 
-  // TABLET
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/Products/Background_tablet@m1x.jpg);
+  // // TABLET
+  // @media screen and (min-width: 768px) {
+  //   background-image: url(../images/Products/Background_tablet@m1x.jpg);
 
-    // TABLET RETINA
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/Products/Background_tablet@m2x.jpg);
-    }
+  //   // TABLET RETINA
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/Products/Background_tablet@m2x.jpg);
+  //   }
 
-    @media screen and (min-width: 768px) {
-      max-width: 100%;
-      height: auto;
-    }
-  }
+  //   @media screen and (min-width: 768px) {
+  //     max-width: 100%;
+  //     height: auto;
+  //   }
+  // }
 
-  // DESKTOP
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/Products/Backgroud_desktop@d1x.jpg);
+  // // DESKTOP
+  // @media screen and (min-width: 1200px) {
+  //   background-image: url(../images/Products/Backgroud_desktop@d1x.jpg);
 
-    // DESKTOP RETINA
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/Products/Backgroud_desktop@d2x.jpg);
-    }
+  //   // DESKTOP RETINA
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/Products/Backgroud_desktop@d2x.jpg);
+  //   }
 
-    @media screen and (min-width: 1200px) {
-      max-width: 100%;
-      height: auto;
-    }
-  }
+  //   @media screen and (min-width: 1200px) {
+  //     max-width: 100%;
+  //     height: auto;
+  //   }
+  // }
 }
 
 .products--tittle {
