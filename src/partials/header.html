@@ -8,9 +8,7 @@
           <a class="navigation-link" href="#header">Home</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="#about"
-            >How it’s made?</a
-          >
+          <a class="navigation-link" href="#about">How it’s made?</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#products">Our products</a>
@@ -21,6 +19,7 @@
       </ul>
     </nav>
     <button
+      type="button"
       class="menu-toggle js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
@@ -41,7 +40,7 @@
 <!-- menu-modal -->
 <div class="menu-container js-menu-container" id="mobile-menu">
   <div class="logo-modal"></div>
-  <button class="menu-toggle js-close-menu">
+  <button type="button" class="menu-toggle js-close-menu">
     <svg class="close-menu" width="32" height="32">
       <use href="./images/sprite.svg#icon-close"></use>
     </svg>
@@ -52,9 +51,7 @@
       <a href="#header" class="mobile-element">Home</a>
     </li>
     <li class="mobile-item">
-      <a href="#about" class="mobile-element mobile-element-current"
-        >How it's made</a
-      >
+      <a href="#about" class="mobile-element">How it's made</a>
     </li>
     <li class="mobile-item">
       <a href="#products" class="mobile-element">Our products</a>
@@ -72,106 +69,6 @@
 </div>
 
 <!-- modal-card BuyNow -->
-
-<!-- initial -->
-
-<!-- <div class="backdrop is-hidden" data-modal>
-  <div class="modal-products">
-    <button class="close-btn" type="button" data-modal-close>
-      <svg class="close-btn-icon" width="20" height="20">
-        <use href="./images/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
-    <form class="form-order">
-      <p class="order-title">Buy now</p>
-      <ul class="list-products list">
-        <li class="product-item">
-          <div class="circle-cream"></div>
-          <input
-            class="product-input visually-hidden"
-            type="checkbox"
-            name="products"
-            value="ice-cream"
-            id="ice-cream"
-          />
-          <label class="product-field" for="ice-cream">
-            <span class="title-product">ICE CREAM</span></label
-          >
-        </li>
-        <li class="product-item">
-          <div class="circle-coffee"></div>
-          <input
-            class="product-input visually-hidden"
-            type="checkbox"
-            name="products"
-            value="ice-coffee"
-            id="ice-coffee"
-          />
-          <label class="product-field" for="ice-coffee"
-            ><span class="title-product">ICE COFFEE</span></label
-          >
-        </li>
-        <li class="product-item">
-          <div class="product-thumb">
-            <div class="circle-milkshakes"></div>
-          </div>
-          <input
-            class="product-input visually-hidden"
-            type="checkbox"
-            name="products"
-            value="milkshake"
-            id="milkshake"
-          />
-          <label class="product-field" for="milkshake">
-            <span class="title-product">MILKSHAKE</span></label
-          >
-        </li>
-      </ul>
-
-      <div class="form-group">
-        <label class="form-field">
-          <input
-            class="form-input"
-            type="name"
-            name="name"
-            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-            placeholder="Ann Tomson"
-            autofocus
-            required
-          />
-          <span class="form-label">Name</span>
-        </label>
-      </div>
-      <div class="form-group">
-        <label class="form-field">
-          <input
-            class="form-input"
-            type="tel"
-            name="phone_number"
-            placeholder="+38(067)3041543"
-            pattern="\d{1,5}"
-            min-length="12"
-            max-length="12"
-            required
-          />
-          <span class="form-label">Phone</span>
-        </label>
-      </div>
-      <div class="form-group">
-        <label class="form-message">
-          <textarea
-            class="form-textarea"
-            name="feedback"
-            rows="5"
-            placeholder="type your text"
-          ></textarea>
-          <span class="comment-label">Comment</span>
-        </label>
-      </div>
-      <button class="btn-submit" type="button">Submit</button>
-    </form>
-  </div>
-</div> -->
 
 <!-- updated -->
 
@@ -232,7 +129,7 @@
         <label class="form-field">
           <input
             class="form-input"
-            type="name"
+            type="text"
             name="name"
             pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
             placeholder="Ann Tomson"
@@ -250,8 +147,6 @@
             name="phone_number"
             placeholder="+38(067)3041543"
             pattern="\d{1,5}"
-            min-length="12"
-            max-length="12"
             required
           />
           <span class="form-label">Phone</span>
