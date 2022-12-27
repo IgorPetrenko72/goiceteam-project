@@ -1,0 +1,39 @@
+// Arrow to return
+.return {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(248, 210, 78, 0.7);
+  // border: 1px solid #000000;
+  border-radius: 50%;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(10, 136, 23, 0.7);
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 20px;
+        bottom: 20px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.return__arrow {
+  fill: #84a178;
+
+//   @media screen and (min-width: 1200px) {
+//     width: 40px;
+//     height: 40px;
+//   }
+}
+
+
