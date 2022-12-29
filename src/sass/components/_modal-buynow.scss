@@ -129,6 +129,15 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+
+  &:active {
+    color: #FFF;
+  }
+  
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
 }
 
 .order-title {
