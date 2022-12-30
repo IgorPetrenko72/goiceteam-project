@@ -1,12 +1,14 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-buttons">
-      <button class="footer-btn" type="button">Our Locations
+      <button class="footer-btn js-open-modal" type="button" data-modal="3"
+      >Our Locations
         <svg class="" width="5" height="10">
           <use href="./images/icons.svg#vector"></use>
         </svg>
       </button>
-      <button class="footer-btn-second" type="button">Franchise
+      <button class="footer-btn-second js-open-modal" type="button" data-modal="4"
+      >Franchise
         <svg class="btn-icon" width="5" height="10">
           <use href="./images/icons.svg#vector"></use>
         </svg>
@@ -53,3 +55,59 @@
     </div>
   </div>
 </footer>
+
+<!-- modal windows-->
+<div class="overlay" data-modal="3">
+  <div class="modal modal-footer" data-modal="3">
+    <button class="js-modal-close modal-cls-btn" type="button">
+      <svg class="modal__icon-close" width="24" height="24">
+        <use href="./images/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Our Locations</h2>    
+      <img src="./images/map.jpg" alt="map">
+      <button class="btn-openmap" type="button">Open map</button>
+  </div>
+</div>
+
+<div class="overlay" data-modal="4">
+  <div class="modal modal-franchise" data-modal="4">
+    <button class="js-modal-close modal-cls-btn" type="button">
+      <svg class="modal__icon-close" width="24" height="24">
+        <use href="./images/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="franchise-title">Thank you for your interest in owning an Ice Cream shop</h2>
+    <p class="text-franchise">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once
+    the application process resumes, we will contact you for further information. Please fill out the contact information
+    below and we will reach out for additional information. We appreciate your patience.</p>
+    <form class="form-order">
+      <div class="form-group">
+        <label class="form-field">
+          <input class="form-input" type="text" name="name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" placeholder="Ann Tomson"
+            autofocus required />
+          <span class="form-label">Name</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-field">
+          <input class="form-input" type="tel" name="phone_number" placeholder="+38(067)3041543" pattern="\d{1,5}" required />
+          <span class="form-label">Phone</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-field">
+          <input class="form-input" type="email" name="Email" placeholder="Anton@gmail.com" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" required />
+          <span class="form-label">Email</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-message">
+          <textarea class="form-textarea" name="feedback" rows="5" placeholder="type your text"></textarea>
+          <span class="comment-label">Comment</span>
+        </label>
+      </div>
+      <button class="btn-submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
