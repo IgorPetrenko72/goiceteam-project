@@ -208,71 +208,95 @@
   }
 }
 
-.products--arrow__ice {
+.products--arrow {
+  position: relative;
   margin-top: 101px;
   margin-bottom: 16px;
   background-color: transparent;
   padding: 0;
   border: none;
   outline: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 1200px) {
-    margin-top: 50px;
-    margin-bottom: 60px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+
+    width: 100%;
+    height: 10px;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    transform: scaleX(0.2);
+    transition: opacity 1000ms, transform 1000ms;
   }
 
   &:hover,
   &:focus {
-    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-  }
-}
+    fill: transparent;
 
-.products--arrow__coffee {
-  margin-top: 53px;
-  margin-bottom: 16px;
-  background-color: transparent;
-  padding: 0;
-  border: none;
-  outline: none;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 50px;
+    &::after {
+      opacity: 1;
+      transform: scaleX(2);
+    }
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 50px;
     margin-bottom: 60px;
   }
-
-  // &:hover,
-  // &:focus {
-  //     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-  // }
 }
 
-.products--arrow__milkshake {
-  margin-top: 73px;
-  margin-bottom: 16px;
-  background-color: transparent;
-  padding: 0;
-  border: none;
-  outline: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// .products--arrow__coffee {
+//   margin-top: 53px;
+//   margin-bottom: 16px;
+//   background-color: transparent;
+//   padding: 0;
+//   border: none;
+//   outline: none;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 75px;
-  }
+//   @media screen and (min-width: 768px) {
+//     margin-top: 50px;
+//   }
 
-  @media screen and (min-width: 1200px) {
-    margin-top: 50px;
-    margin-bottom: 60px;
-  }
+//   @media screen and (min-width: 1200px) {
+//     margin-top: 50px;
+//     margin-bottom: 60px;
+//   }
 
-  &:hover,
-  &:focus {
-    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-  }
-}
+//   // &:hover,
+//   // &:focus {
+//   //     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+//   // }
+// }
+
+// .products--arrow__milkshake {
+//   margin-top: 73px;
+//   margin-bottom: 16px;
+//   background-color: transparent;
+//   padding: 0;
+//   border: none;
+//   outline: none;
+//   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   @media screen and (min-width: 768px) {
+//     margin-top: 75px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     margin-top: 50px;
+//     margin-bottom: 60px;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+//   }
+// }
 
 .products--thumb {
   position: relative;
@@ -311,6 +335,10 @@
     width: 100%;
     height: 100%;
     background-image: url(../images/Products/ice-cream@m1x.png);
+
+    @media screen and (min-width: 768px) {
+        animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
 
     @media screen and (min-width: 1200px) {
       background-image: url(../images/Products/ice-cream@d1x.png);
@@ -365,6 +393,10 @@
     height: 100%;
     background-image: url(../images/Products/ice-coffee@m1x.png);
 
+    @media screen and (min-width: 768px) {
+        animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 250ms both;
+      }
+
     @media screen and (min-width: 1200px) {
       background-image: url(../images/Products/ice-coffee@d1x.png);
     }
@@ -418,6 +450,10 @@
     height: 100%;
     background-image: url(../images/Products/milkshake@m1x.png);
 
+    @media screen and (min-width: 768px) {
+        animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 500ms both;
+      }
+
     @media screen and (min-width: 1200px) {
       background-image: url(../images/Products/milkshake@d1x.png);
     }
@@ -440,3 +476,15 @@
     }
   }
 }
+
+ @keyframes slide-in-top {
+   0% {
+     transform: translateY(-1000px);
+     opacity: 0;
+   }
+
+   100% {
+     transform: translateY(0);
+     opacity: 1;
+   }
+ }
